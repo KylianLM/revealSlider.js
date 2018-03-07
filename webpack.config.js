@@ -1,6 +1,7 @@
 var path = require('path'),
     webpack = require('webpack');
 
+const Jarvis = require("webpack-jarvis");
 module.exports = {
     entry: './src/rSlider.js',
     output: {
@@ -9,7 +10,7 @@ module.exports = {
         libraryTarget: 'var',
         library: 'rSlider'
     },
-    module : {
+    module: {
         rules: [
             {
                 test: /\.js$/,
@@ -23,5 +24,10 @@ module.exports = {
     stats: {
         colors: true
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    plugins: [
+        new Jarvis({
+            port: 1337
+        })
+    ]
 };
