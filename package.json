@@ -1,0 +1,27 @@
+{
+  "name": "revealslider",
+  "version": "1.0.0",
+  "description": "A simple library to create a reveal Slider. (nice for transition)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 src/jauge.js -o build/jauge.bundle.js",
+    "start": "live-server",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KylianLM/revealSlider.js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KylianLM/revealSlider.js/issues"
+  },
+  "homepage": "https://github.com/KylianLM/revealSlider.js#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  }
+}
